@@ -1,0 +1,65 @@
+---
+import Shop from "../icons/Shop.astro";
+import ToggleIcon from "../icons/ToggleIcon.astro";
+---
+
+<nav class=" border-gray-200 ">
+  <div
+    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+  >
+    <a
+      href="/"
+      class="flex items-center space-x-3 rtl:space-x-reverse"
+    >
+      <Shop/>
+      <span
+        class="self-center text-2xl font-semibold whitespace-nowrap text-orange-500"
+        >Moviles Veman</span
+      >
+    </a>
+    <button
+      data-collapse-toggle="navbar-default"
+      type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 "
+      aria-controls="navbar-default"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Open main menu</span>
+      <ToggleIcon/>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul
+        class="font-medium flex flex-col p-4 md:p-0 mt-4 border bg-orange-50 border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 items-center"
+      >
+        <li>
+          <a
+            href="/nuevo"
+            class="block py-2 px-3 rounded md:bg-transparent text-orange-700"
+            aria-current="page">Nuevo</a
+          >
+        </li>
+        <li>
+          <a
+            href="/opiniones"
+            class="block py-2 px-3 rounded md:bg-transparent text-orange-700"
+            >Opiniones</a
+          >
+        </li>
+        <li>
+          <a
+            href="/nosotros"
+            class="block py-2 px-3 rounded md:bg-transparent text-orange-700"
+            >Nosotros</a
+          >
+        </li>
+        <li>
+          <a
+            href="/contacto"
+            class="block py-2 px-3 rounded md:bg-transparent text-orange-700"
+            >Contacto</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
